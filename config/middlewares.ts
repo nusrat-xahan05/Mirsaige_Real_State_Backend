@@ -51,7 +51,10 @@ const config: Core.Config.Middlewares = [
   {
     name: "strapi::cors",
     config: {
-      origin: ["http://localhost:3000", "https://your-frontend.vercel.app"],
+      origin: [
+        "http://localhost:3000",
+        "https://mirsaige-real-state-frontend.vercel.app",
+      ],
       methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
       headers: ["Content-Type", "Authorization"],
     },
