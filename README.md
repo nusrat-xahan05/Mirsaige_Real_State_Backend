@@ -1,61 +1,91 @@
-# 🚀 Getting started with Strapi
+# 🧩 Real Estate Blog Backend (Strapi)
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+## 📌 Project Overview
 
-### `develop`
-
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
-
-```
-npm run develop
-# or
-yarn develop
-```
-
-### `start`
-
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
-
-```
-npm run start
-# or
-yarn start
-```
-
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
-
-```
-yarn strapi deploy
-```
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+This is the backend service for the Real Estate Blog application, built using Strapi as a headless CMS. It provides RESTful APIs for managing blog posts, including creation, retrieval, and media handling. The backend is designed to be scalable, flexible, and easy to integrate with modern frontend frameworks.
 
 ---
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+## 🚀 Tech Stack
+
+- Strapi (Headless CMS)
+- Node.js
+- PostgreSQL (Database)
+- Cloudinary (Media Storage)
+- Render (Deployment Platform)
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository
+
+```
+git clone "https://github.com/nusrat-xahan05/Mirsaige_Real_State_Backend"
+cd Mirsaige_Real_State_Backend
+```
+
+### 2. Install dependencies
+
+```
+npm install
+```
+
+### 3. Create `.env`
+
+```
+DATABASE_CLIENT=postgres
+DATABASE_URL=your_database_url
+APP_KEYS=your_app_keys
+API_TOKEN_SALT=your_api_token_salt
+ADMIN_JWT_SECRET=your_admin_jwt_secret
+JWT_SECRET=your_jwt_secret
+```
+
+- Credentials are not provided due to security purpose
+
+### 4. Run development server
+
+```
+npm run develop
+```
+
+### 5. Build and start (production)
+
+```
+npm run build
+npm run start
+```
+
+---
+
+## 🌐 Live Links
+
+- 🔗 Backend Live: https://mirsaige-real-state-backend.onrender.com
+- 🔗 Frontend Live: https://mirsaige-real-state-frontend.vercel.app
+- 🔗 Frontend Repo: https://github.com/nusrat-xahan05/Mirsaige_Real_State_Frontend
+
+---
+
+## ✨ Features Implemented
+
+- **Content Management (Posts)**  
+  Create, read, and manage blog posts via Strapi dashboard and API.
+
+- **REST API Endpoints**  
+  Auto-generated endpoints for fetching all posts and individual posts using filters (e.g., slug).
+
+- **Image Upload Support**  
+  Integrated media upload with Cloudinary for persistent storage.
+
+- **Role-Based Permissions**  
+  Configured public access for reading content and creating posts.
+
+- **Deployment Ready**  
+  Configured environment variables and database connection for production deployment on Render.
+
+---
+
+## 📌 Notes
+
+This backend is designed to work seamlessly with a Next.js frontend and demonstrates a modern headless CMS architecture.
