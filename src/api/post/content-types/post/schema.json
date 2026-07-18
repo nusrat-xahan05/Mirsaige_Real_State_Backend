@@ -19,14 +19,6 @@
       "type": "richtext",
       "required": true
     },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "files",
-        "images"
-      ]
-    },
     "isFeatured": {
       "type": "boolean",
       "default": false
